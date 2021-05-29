@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Business.Adapters;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
+using System;
 
 namespace ConsoleUI
 {
@@ -6,7 +10,10 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            StarbucksCustomerManager customerManager = new StarbucksCustomerManager(new EfCustomerDal(),new MernisServiceAdapter());
+            customerManager.Add(new Customer { DateOfBirth = new DateTime(1998, 5, 5), FirstName = "Mısra", LastName = "Erol", NationalityId = "12632254836" });
+            Console.ReadLine();
         }
     }
 }
