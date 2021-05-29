@@ -9,6 +9,7 @@ namespace Business.Concrete
 {
     public abstract class OtherCustomerManager : ICustomerService
     {
+        //diğer firma müşterileri için doğrulama kullanmadık
         ICustomerDal _customerDal;
         public OtherCustomerManager(ICustomerDal customerDal)
         {
