@@ -12,7 +12,7 @@ namespace Business.Concrete
         private IUserValidationService _userValidationService;
         private ICustomerDal _customerDal;
 
-
+        //bağımlılığı azaltmak için Constructor kullandık
         public StarbucksCustomerManager(ICustomerDal customerDal, IUserValidationService userValidationService)
         {
             _customerDal = customerDal;
