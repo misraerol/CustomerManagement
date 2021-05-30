@@ -28,8 +28,8 @@ namespace Business.Concrete
             }
             else
             {
-                Console.WriteLine("Kişi bulunamadı");
-                //throw new Exception("Kişi bulunamadı");
+                //Console.WriteLine("Kişi bulunamadı");
+                throw new Exception("Kişi bulunamadı");
 
             }
         }

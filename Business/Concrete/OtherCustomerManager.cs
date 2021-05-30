@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Business.Concrete
 {
-    public abstract class OtherCustomerManager : ICustomerService
+    public class  OtherCustomerManager : ICustomerService
     {
         //diğer firma müşterileri için doğrulama kullanmadık
         ICustomerDal _customerDal;
